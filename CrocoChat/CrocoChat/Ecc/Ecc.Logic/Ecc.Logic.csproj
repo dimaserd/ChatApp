@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CrocoChat.Logic\CrocoChat.Logic.csproj" />
+    <ProjectReference Include="..\..\CrocoChat.Model\CrocoChat.Model.csproj" />
+    <ProjectReference Include="..\..\Zoo\Zoo.csproj" />
+    <ProjectReference Include="..\Ecc.Contract\Ecc.Contract.csproj" />
+  </ItemGroup>
+
+</Project>

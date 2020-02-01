@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrocoChat.Logic", "CrocoCha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoo", "Zoo\Zoo.csproj", "{BCAFC236-D314-4E73-97B1-8C0D1C2994ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecc.Contract", "Ecc\Ecc.Contract\Ecc.Contract.csproj", "{EEF86163-4BBC-4C57-A44C-E620B04247CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecc.Logic", "Ecc\Ecc.Logic\Ecc.Logic.csproj", "{57DE6626-574B-49D5-B061-45D9258981C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,9 +45,21 @@ Global
 		{BCAFC236-D314-4E73-97B1-8C0D1C2994ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCAFC236-D314-4E73-97B1-8C0D1C2994ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCAFC236-D314-4E73-97B1-8C0D1C2994ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF86163-4BBC-4C57-A44C-E620B04247CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF86163-4BBC-4C57-A44C-E620B04247CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF86163-4BBC-4C57-A44C-E620B04247CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF86163-4BBC-4C57-A44C-E620B04247CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57DE6626-574B-49D5-B061-45D9258981C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57DE6626-574B-49D5-B061-45D9258981C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57DE6626-574B-49D5-B061-45D9258981C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57DE6626-574B-49D5-B061-45D9258981C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EEF86163-4BBC-4C57-A44C-E620B04247CF} = {901EF255-2C96-433B-885F-F76487921159}
+		{57DE6626-574B-49D5-B061-45D9258981C9} = {901EF255-2C96-433B-885F-F76487921159}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {37133B0D-7809-4E0B-8775-2B33470D6EB6}
