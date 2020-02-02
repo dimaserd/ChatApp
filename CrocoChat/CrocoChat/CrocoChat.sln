@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clt.Contract", "Clt\Clt.Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clt.Logic", "Clt\Clt.Logic\Clt.Logic.csproj", "{81DE7E4B-8CF7-457D-AD14-7BB2880A1D67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrocoChat.Api", "CrocoChat.Api\CrocoChat.Api.csproj", "{D3C8BF02-3147-43DD-A516-4758375DCE23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{81DE7E4B-8CF7-457D-AD14-7BB2880A1D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81DE7E4B-8CF7-457D-AD14-7BB2880A1D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81DE7E4B-8CF7-457D-AD14-7BB2880A1D67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3C8BF02-3147-43DD-A516-4758375DCE23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3C8BF02-3147-43DD-A516-4758375DCE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3C8BF02-3147-43DD-A516-4758375DCE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3C8BF02-3147-43DD-A516-4758375DCE23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
