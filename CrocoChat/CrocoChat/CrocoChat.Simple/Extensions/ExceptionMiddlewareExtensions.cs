@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 
-namespace CrocoShop.Extensions
+namespace CrocoChat.Simple.Extensions
 {
     public static class ExceptionMiddlewareExtensions
     {

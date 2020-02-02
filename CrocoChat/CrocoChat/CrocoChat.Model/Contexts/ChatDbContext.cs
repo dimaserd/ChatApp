@@ -41,6 +41,21 @@ namespace CrocoChat.Model.Contexts
             return new ChatDbContext(optionsBuilder.Options);
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            IntegrationMessageStatusLog.OnModelCreating(modelBuilder);
+            LoggedApplicationAction.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<AuditLog>().Property(x => x.Id).ValueGeneratedOnAdd();
+
+            WebAppRequestContextLog.OnModelCreating(modelBuilder);
+
+            ApplicationChatUserRelation.OnModelCreating<ApplicationChatUserRelation>(modelBuilder);
+
+            base.OnModelCreating(modelBuilder);
+        }
+
+
 
         #region IStore
         public DbSet<RobotTask> RobotTasks { get; set; }
