@@ -13,7 +13,7 @@ using Croco.Core.Abstractions.Models.Log;
 using CrocoChat.Model.Entities.Ecc.Chats;
 using CrocoChat.Logic.Workers.Base;
 using CrocoChat.Model.Entities.Clt;
-using CrocoChat.Logic.Resources;
+using CrocoChat.Simple.Resources;
 
 namespace Ecc.Logic.Workers.Chat
 {

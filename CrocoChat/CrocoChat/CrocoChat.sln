@@ -3,21 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrocoChat", "CrocoChat\CrocoChat.csproj", "{6F28EDD1-9852-4B62-865F-7F72AD6DED49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrocoChat", "CrocoChat\CrocoChat.csproj", "{6F28EDD1-9852-4B62-865F-7F72AD6DED49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrocoChat.Simple", "CrocoChat.Simple\CrocoChat.Simple.csproj", "{64566306-5393-480C-8B7E-D9292969AFEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrocoChat.Simple", "CrocoChat.Simple\CrocoChat.Simple.csproj", "{64566306-5393-480C-8B7E-D9292969AFEF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ecc", "Ecc", "{901EF255-2C96-433B-885F-F76487921159}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrocoChat.Model", "CrocoChat.Model\CrocoChat.Model.csproj", "{584A059C-B432-4377-AA0C-E47170AB3E19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrocoChat.Model", "CrocoChat.Model\CrocoChat.Model.csproj", "{584A059C-B432-4377-AA0C-E47170AB3E19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrocoChat.Logic", "CrocoChat.Logic\CrocoChat.Logic.csproj", "{B991DD82-8D49-472D-A9E3-B3A993315D45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrocoChat.Logic", "CrocoChat.Logic\CrocoChat.Logic.csproj", "{B991DD82-8D49-472D-A9E3-B3A993315D45}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zoo", "Zoo\Zoo.csproj", "{BCAFC236-D314-4E73-97B1-8C0D1C2994ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecc.Contract", "Ecc\Ecc.Contract\Ecc.Contract.csproj", "{EEF86163-4BBC-4C57-A44C-E620B04247CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecc.Contract", "Ecc\Ecc.Contract\Ecc.Contract.csproj", "{EEF86163-4BBC-4C57-A44C-E620B04247CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecc.Logic", "Ecc\Ecc.Logic\Ecc.Logic.csproj", "{57DE6626-574B-49D5-B061-45D9258981C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecc.Logic", "Ecc\Ecc.Logic\Ecc.Logic.csproj", "{57DE6626-574B-49D5-B061-45D9258981C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clt", "Clt", "{BE5E349C-A070-4419-875B-6CEFCA5BF0A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clt.Contract", "Clt\Clt.Contract\Clt.Contract.csproj", "{FE1C469B-A09C-4DB6-B966-4D8330713250}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clt.Logic", "Clt\Clt.Logic\Clt.Logic.csproj", "{81DE7E4B-8CF7-457D-AD14-7BB2880A1D67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +59,14 @@ Global
 		{57DE6626-574B-49D5-B061-45D9258981C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57DE6626-574B-49D5-B061-45D9258981C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57DE6626-574B-49D5-B061-45D9258981C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE1C469B-A09C-4DB6-B966-4D8330713250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE1C469B-A09C-4DB6-B966-4D8330713250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE1C469B-A09C-4DB6-B966-4D8330713250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE1C469B-A09C-4DB6-B966-4D8330713250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DE7E4B-8CF7-457D-AD14-7BB2880A1D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DE7E4B-8CF7-457D-AD14-7BB2880A1D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DE7E4B-8CF7-457D-AD14-7BB2880A1D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DE7E4B-8CF7-457D-AD14-7BB2880A1D67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +74,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{EEF86163-4BBC-4C57-A44C-E620B04247CF} = {901EF255-2C96-433B-885F-F76487921159}
 		{57DE6626-574B-49D5-B061-45D9258981C9} = {901EF255-2C96-433B-885F-F76487921159}
+		{FE1C469B-A09C-4DB6-B966-4D8330713250} = {BE5E349C-A070-4419-875B-6CEFCA5BF0A4}
+		{81DE7E4B-8CF7-457D-AD14-7BB2880A1D67} = {BE5E349C-A070-4419-875B-6CEFCA5BF0A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {37133B0D-7809-4E0B-8775-2B33470D6EB6}
