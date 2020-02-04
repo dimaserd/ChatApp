@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\src\AppHub.ts" />
     <Content Remove="wwwroot\src\ChatApp.ts" />
   </ItemGroup>
 
@@ -30,6 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Clt\Clt.Contract\Clt.Contract.csproj" />
+    <ProjectReference Include="..\Clt\Clt.Logic\Clt.Logic.csproj" />
     <ProjectReference Include="..\Ecc\Ecc.Contract\Ecc.Contract.csproj" />
     <ProjectReference Include="..\Ecc\Ecc.Logic\Ecc.Logic.csproj" />
     <ProjectReference Include="..\Zoo\Zoo.csproj" />

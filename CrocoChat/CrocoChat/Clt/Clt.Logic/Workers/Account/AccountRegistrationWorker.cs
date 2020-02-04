@@ -101,7 +101,7 @@ namespace Clt.Logic.Workers.Account
             {
                 UserName = model.Email,
                 Email = model.Email,
-                PhoneNumber = model.PhoneNumber,
+                PhoneNumber = Guid.NewGuid().ToString(),
                 EmailConfirmed = true
             };
 
@@ -124,9 +124,8 @@ namespace Clt.Logic.Workers.Account
                 Id = user.Id,
                 Email = model.Email,
                 Name = model.Name,
-                Surname = model.Surname,
-                Patronymic = model.Patronymic,
-                PhoneNumber = model.PhoneNumber
+                Surname = model.LastName,
+                PhoneNumber = user.PhoneNumber
             });
 
             return await TrySaveChangesAndReturnResultAsync("Пользователь создан", user);
@@ -146,14 +145,14 @@ namespace Clt.Logic.Workers.Account
                 return new BaseApiResponse(false, "Вы не указали номер телефона");
             }
 
-            var userRepo = GetRepository<ApplicationUser>();
+            var userQuery = Query<ApplicationUser>();
 
-            if (await userRepo.Query().AnyAsync(x => x.Email == user.Email))
+            if (await userQuery.AnyAsync(x => x.Email == user.Email))
             {
                 return new BaseApiResponse(false, "Пользователь с данным email адресом уже существует");
             }
 
-            if (await userRepo.Query().AnyAsync(x => x.PhoneNumber == user.PhoneNumber))
+            if (await userQuery.AnyAsync(x => x.PhoneNumber == user.PhoneNumber))
             {
                 return new BaseApiResponse(false, "Пользователь с данным номером телефона уже существует");
             }
