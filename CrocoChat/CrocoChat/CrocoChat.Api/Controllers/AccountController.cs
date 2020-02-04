@@ -14,7 +14,7 @@ namespace CrocoChat.Api.Controllers
     /// <summary>
     /// Методы для работы с учетной записью
     /// </summary>
-    [Route("/api/Account")]
+    [Route("Api/Account")]
     public class AccountController : BaseApiController
     {
         /// <summary>

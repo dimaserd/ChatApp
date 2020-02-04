@@ -8,12 +8,5 @@ namespace CrocoChat.Simple.Hubs
 {
     public class AppHub : MyCrocoHubBase
     {
-        public async Task Register(RegisterModel model)
-        {
-            CrocoTransactionHandler.System.ExecuteAndCloseTransactionSafe(amb =>
-            {
-                new AccountRegistrationWorker(amb).RegisterAndSignInAsync(model, false)
-            })
-        }
     }
 }
