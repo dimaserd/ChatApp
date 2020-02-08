@@ -4,7 +4,6 @@ using Croco.Core.Abstractions;
 using Croco.Core.Abstractions.Models;
 using Clt.Contract.Models.Account;
 using Clt.Logic.Workers.Users;
-using Clt.Logic.Models.Account;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using CrocoChat.Logic.Workers.Base;
@@ -16,27 +15,6 @@ namespace Clt.Logic.Workers.Account
 {
     public class AccountLoginWorker : BaseWorker
     {
-        public async Task<BaseApiResponse<LoginResultModel>> LoginByPhoneNumberAsync(LoginByPhoneNumberModel model, SignInManager<ApplicationUser> signInManager)
-        {
-            var validation = ValidateModel(model);
-
-            if (!validation.IsSucceeded)
-            {
-                return new BaseApiResponse<LoginResultModel>(validation);
-            }
-
-            var searcher = new UserSearcher(AmbientContext);
-
-            var user = await searcher.GetUserByPhoneNumberAsync(model.PhoneNumber);
-
-            if (user == null)
-            {
-                return new BaseApiResponse<LoginResultModel>(false, "Пользователь не найден по указанному номеру телефона");
-            }
-
-            return await LoginAsync(LoginModel.GetModel(model, user.Email), signInManager);
-        }
-
         public async Task<BaseApiResponse<LoginResultModel>> LoginAsync(LoginModel model, SignInManager<ApplicationUser> signInManager)
         {
             var validation = ValidateModel(model);
@@ -52,8 +30,6 @@ namespace Clt.Logic.Workers.Account
             }
 
             model.RememberMe = true;
-
-            var result = false;
 
             var user = await signInManager.UserManager.FindByEmailAsync(model.Email);
 
@@ -94,13 +70,8 @@ namespace Clt.Logic.Workers.Account
 
                 return new BaseApiResponse<LoginResultModel>(false, ex.Message);
             }
-            
-            if (result)
-            {   
-                return new BaseApiResponse<LoginResultModel>(true, "Авторизация прошла успешно", new LoginResultModel { Result = LoginResult.SuccessfulLogin, TokenId = null });
-            }
 
-            return new BaseApiResponse<LoginResultModel>(false, "Неудачная попытка входа", new LoginResultModel { Result = LoginResult.UnSuccessfulAttempt, TokenId = null });
+            return new BaseApiResponse<LoginResultModel>(true, "Авторизация прошла успешно", new LoginResultModel { Result = LoginResult.SuccessfulLogin, TokenId = null });
         }
 
         /// <summary>

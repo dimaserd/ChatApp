@@ -1,0 +1,15 @@
+[
+  {
+    "outputFileName": "ClientApp/bundles/index.js",
+    "inputFiles": [
+      "wwwroot/src/ToastrWorker.js",
+      "wwwroot/src/Requester.js",
+      "wwwroot/src/AppHub.js",
+      "wwwroot/src/ChatApp.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    }
+  }
+]

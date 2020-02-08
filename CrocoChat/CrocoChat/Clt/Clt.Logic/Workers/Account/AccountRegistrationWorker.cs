@@ -11,11 +11,21 @@ using CrocoChat.Logic.Workers.Base;
 using CrocoChat.Model.Entities.Clt.Default;
 using CrocoChat.Model.Entities.Clt;
 using Clt.Contract.Events;
+using Clt.Logic.Models;
 
 namespace Clt.Logic.Workers.Account
 {
     public class AccountRegistrationWorker : BaseWorker
     {
+        public AuthorizedResponse IsAuthorized()
+        {
+            return new AuthorizedResponse
+            {
+                IsAuthenticated = IsAuthenticated,
+                UserId = UserId
+            };
+        }
+
         #region Методы регистрации
         public async Task<BaseApiResponse<RegisteredUser>> RegisterAndSignInAsync(RegisterModel model, bool createRandomPassword, UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
         {

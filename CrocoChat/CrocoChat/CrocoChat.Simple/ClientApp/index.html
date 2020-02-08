@@ -9,6 +9,8 @@
     <!-- Favicon -->
     <link rel="icon" href="./dist/media/img/favicon.png" type="image/png">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+
     <!-- Bundle Styles -->
     <link rel="stylesheet" href="./vendor/bundle.css">
 
@@ -520,9 +522,9 @@
                             <input type="checkbox" class="custom-control-input" checked="" id="login-remember-me">
                             <label class="custom-control-label" for="customCheck1">Запомнить меня</label>
                         </div>
-                        <a href="#" data-toggle="modal" data-target="#forgetPassModal" data-dismiss="modal" >Сбросить пароль</a>
+                        <a href="#" data-toggle="modal" data-target="#forgetPassModal" data-dismiss="modal">Сбросить пароль</a>
                     </div>
-                    <button class="btn btn-primary btn-block">Авторизация</button>
+                    <button class="btn btn-primary btn-block" id="login-btn">Авторизация</button>
                     <hr />
                     <div class="d-flex justify-content-center">
                         <p class="text-muted text-justify">Еще не зарегистрированы?</p>
@@ -561,7 +563,7 @@
                         <input type="email" id="register-email" class="form-control" placeholder="Email" required="">
                     </div>
                     <div class="form-group">
-                        <input type="password" id="register-pass"  class="form-control" placeholder="Password" required="">
+                        <input type="password" id="register-pass" class="form-control" placeholder="Password" required="">
                     </div>
                     <button id="register-btn" class="btn btn-primary btn-block">Зарегистрировать</button>
                     <hr />
@@ -635,6 +637,70 @@
                                     l134.047-81.339c18.552,3.061,37.638,4.839,57.203,4.839c169.008,0,306-119.875,306-267.75C612,119.875,475.008,0,306,0z
                                     M306,497.25c-22.338,0-43.911-2.601-64.643-7.019l-90.041,54.123l1.205-88.701C83.5,414.133,38.25,345.513,38.25,267.75
                                     c0-126.741,119.875-229.5,267.75-229.5c147.875,0,267.75,102.759,267.75,229.5S453.875,497.25,306,497.25z" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2095,40 +2161,10 @@
     <!-- Examples -->
     <script src="./dist/js/examples.js"></script>
 
-    <script>
-        function MakeNoMesages() {
-            $(".chat-footer").fadeOut();
-            $(".messages").fadeOut();
-            $(".chat-header").fadeOut();
-            $(".no-message-container").fadeIn();
-            document.getElementById("chats").classList.remove("active");
-        }
 
-        function ShowMessages() {
-            $(".chat-footer").fadeIn();
-            $(".messages").fadeIn();
-            $(".chat-header").fadeIn();
-            $(".no-message-container").fadeOut();
-        }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
-        function OpenSideBar() {
-            document.getElementsByClassName("sidebar-group")[0].classList.add("mobile-open")
-        }
-
-        function OpenMainSideBar() {
-            document.getElementById("main-side-bar").classList.add("mobile-open");
-        }
-
-        function ShowContactInfo() {
-
-            document.getElementById("profile-sidebar").classList.add("mobile-open");
-            document.getElementById("contact-information").classList.add("active");
-        }
-
-        function ShowLoginModal() {
-            $("#loginModal").modal('show');
-        }
-    </script>
+    <script src="./bundles/index.min.js"></script>
 
 </body>
 </html>

@@ -7,6 +7,8 @@
   <ItemGroup>
     <Content Remove="wwwroot\src\AppHub.ts" />
     <Content Remove="wwwroot\src\ChatApp.ts" />
+    <Content Remove="wwwroot\src\Requester.ts" />
+    <Content Remove="wwwroot\src\ToastrWorker.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,13 +35,14 @@
   <ItemGroup>
     <ProjectReference Include="..\Clt\Clt.Contract\Clt.Contract.csproj" />
     <ProjectReference Include="..\Clt\Clt.Logic\Clt.Logic.csproj" />
+    <ProjectReference Include="..\CrocoChat.Api\CrocoChat.Api.csproj" />
     <ProjectReference Include="..\Ecc\Ecc.Contract\Ecc.Contract.csproj" />
     <ProjectReference Include="..\Ecc\Ecc.Logic\Ecc.Logic.csproj" />
     <ProjectReference Include="..\Zoo\Zoo.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\" />
+    <Folder Include="wwwroot\bundles\" />
   </ItemGroup>
   
 </Project>

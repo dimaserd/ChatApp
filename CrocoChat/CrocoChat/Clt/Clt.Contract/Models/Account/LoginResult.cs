@@ -23,6 +23,6 @@ namespace Clt.Contract.Models.Account
         NeedConfirmation,
 
         [Display(Name = "Пользователь деактивирован")]
-        UserDeactivated,
+        UserDeactivated
     }
 }

@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CrocoChat.Api</name>
+    </assembly>
+    <members>
+        <member name="T:CrocoChat.Api.Controllers.AccountController">
+            <summary>
+            Методы для работы с учетной записью
+            </summary>
+        </member>
+        <member name="M:CrocoChat.Api.Controllers.AccountController.#ctor(CrocoChat.Model.Contexts.ChatDbContext,CrocoChat.Logic.Services.ApplicationSignInManager,CrocoChat.Logic.Services.ApplicationUserManager,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="context"></param>
+            <param name="signInManager"></param>
+            <param name="userManager"></param>
+            <param name="httpContextAccessor"></param>
+        </member>
+        <member name="M:CrocoChat.Api.Controllers.AccountController.RegisterAndSignIn(Clt.Contract.Models.Account.RegisterModel)">
+            <summary>
+            Зарегистрировать
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrocoChat.Api.Controllers.AccountController.Login(Clt.Contract.Models.Account.LoginModel)">
+            <summary>
+            Зарегистрировать
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CrocoChat.Api.Controllers.AccountController.IsAuthorized">
+            <summary>
+            Зарегистрировать
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CrocoChat.Api.Controllers.Base.BaseApiController">
+            <inheritdoc />
+            <summary>
+            Базовый абстрактный контроллер в котором собраны общие методы и свойства
+            </summary>
+        </member>
+        <member name="M:CrocoChat.Api.Controllers.Base.BaseApiController.#ctor(CrocoChat.Model.Contexts.ChatDbContext,CrocoChat.Logic.Services.ApplicationSignInManager,CrocoChat.Logic.Services.ApplicationUserManager,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <inheritdoc />
+        </member>
+        <member name="M:CrocoChat.Api.Controllers.Base.BaseApiController.Dispose(System.Boolean)">
+            <inheritdoc />
+            <summary>
+            Удаление объекта из памяти
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="T:CrocoChat.Api.Controllers.Base.CrocoGenericController`2">
+            <summary>
+            Обобщенный веб-контроллер с основной логикой
+            </summary>
+            <typeparam name="TContext"></typeparam>
+            <typeparam name="TUser"></typeparam>
+        </member>
+        <member name="M:CrocoChat.Api.Controllers.Base.CrocoGenericController`2.#ctor(`0,Microsoft.AspNetCore.Identity.SignInManager{`1},Microsoft.AspNetCore.Identity.UserManager{`1},System.Func{System.Security.Principal.IPrincipal,System.String},Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <inheritdoc />
+        </member>
+        <member name="P:CrocoChat.Api.Controllers.Base.CrocoGenericController`2.Context">
+            <summary>
+            Контекст для работы с бд
+            </summary>
+        </member>
+        <member name="P:CrocoChat.Api.Controllers.Base.CrocoGenericController`2.CrocoPrincipal">
+            <summary>
+            Контекст текущего пользователя
+            </summary>
+        </member>
+        <member name="P:CrocoChat.Api.Controllers.Base.CrocoGenericController`2.RequestContext">
+            <summary>
+            Контекст текущего запроса
+            </summary>
+        </member>
+        <member name="P:CrocoChat.Api.Controllers.Base.CrocoGenericController`2.AmbientContext">
+            <summary>
+            Обёртка для контекста окружения
+            </summary>
+        </member>
+        <member name="P:CrocoChat.Api.Controllers.Base.CrocoGenericController`2.Connection">
+            <summary>
+            Соединение к удалённому источнику данных
+            </summary>
+        </member>
+        <member name="P:CrocoChat.Api.Controllers.Base.CrocoGenericController`2.SignInManager">
+            <summary>
+            Менеджер авторизации
+            </summary>
+        </member>
+        <member name="P:CrocoChat.Api.Controllers.Base.CrocoGenericController`2.UserManager">
+            <summary>
+            Менеджер для работы с пользователями
+            </summary>
+        </member>
+        <member name="P:CrocoChat.Api.Controllers.Base.CrocoGenericController`2.HttpContextAccessor">
+            <summary>
+            Контекст доступа к запросу
+            </summary>
+        </member>
+        <member name="M:CrocoChat.Api.Controllers.Base.CrocoGenericController`2.Dispose(System.Boolean)">
+            <inheritdoc />
+            <summary>
+            Удаление объекта из памяти
+            </summary>
+            <param name="disposing"></param>
+        </member>
+    </members>
+</doc>
